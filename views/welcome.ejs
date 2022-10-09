@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>An Example Title</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <h1>Hello, <%= name %>!</h1>
+    <h3>This site was accessed at <span class="date"><%= date %></span></h3>
+    <h3>You are visitor #<%= visitorId %></h3>
+    <% if (lastvisitsecond >= 0) { %>
+      <h3 class="message">It has been <%= lastvisitsecond %> second since your last visit</h3>
+    <%} else { %>
+      <h3 class="message">You have never visited before, Welcome to this site!</h3>
+    <% } %>
+</body>
+</html>
