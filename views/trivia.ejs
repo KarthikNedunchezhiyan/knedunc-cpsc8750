@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trivia</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <header>
+      <h1>Trivia Question</h1>
+    </header>
+    <p><%- question %></p>
+    <ol>
+      <% answers.forEach(answer => { %>
+        <li><a href="javascript:alert('<%= answer === correct_answer ? "Correct!" :  "Incorrect, Please Try Again!" %>')"><%- answer %></a></li>
+      <% }); %>
+    </ol>
+    <footer>
+      <dl>
+        <dt>Category</dt>
+        <dd><%- category %></dd>
+        <dt>Difficulty</dt>
+        <dd class="difficulty-<%=difficulty%>"><%- difficulty %></dd>
+      </dl>
+    </footer>
+  </body>
+</html>

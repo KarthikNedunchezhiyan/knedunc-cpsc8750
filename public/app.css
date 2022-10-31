@@ -11,3 +11,19 @@ body {
 .message {
     color: #107dac;
 }
+
+a {
+    color: #9F8772;
+}
+
+.difficulty-hard {
+    color: red;
+}
+
+.difficulty-medium {
+    color: yellow;
+}
+
+.difficulty-easy {
+    color: green;
+}
